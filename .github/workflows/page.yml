@@ -34,7 +34,6 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: lts/*
-          cache: 'pnpm' # 设置 pnpm 缓存
       - name: Install pnpm
         run: npm install -g pnpm # 全局安装 pnpm
       - name: Install dependencies
