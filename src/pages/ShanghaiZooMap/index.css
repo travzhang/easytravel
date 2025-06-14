@@ -1,0 +1,276 @@
+.shanghai-zoo-map {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #f5f5f5;
+}
+
+.map-container {
+  flex: 1;
+  width: 100%;
+  position: relative;
+}
+
+.loading-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.9);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.loading-text {
+  margin-top: 16px;
+  font-size: 16px;
+  color: #666;
+}
+
+.data-stats {
+  position: absolute;
+  top: 80px;
+  left: 16px;
+  right: 16px;
+  z-index: 100;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.stat-item {
+  text-align: center;
+}
+
+.stat-number {
+  font-size: 24px;
+  font-weight: bold;
+  color: #1890ff;
+  margin-bottom: 4px;
+}
+
+.stat-label {
+  font-size: 12px;
+  color: #666;
+}
+
+.layer-controls {
+  padding: 8px 0;
+}
+
+.layer-controls h3 {
+  margin: 0 0 16px 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.control-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.control-item:last-child {
+  border-bottom: none;
+}
+
+.control-item span {
+  font-size: 16px;
+  color: #333;
+}
+
+.feature-details h3 {
+  margin: 0 0 16px 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.detail-content {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.detail-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+}
+
+.detail-item strong {
+  color: #333;
+  min-width: 80px;
+}
+
+/* 地图标记样式 */
+.boundary-label {
+  background-color: #FF6B6B;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: bold;
+  white-space: nowrap;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.accessibility-marker {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  border: 2px solid white;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.accessibility-marker:hover {
+  transform: scale(1.1);
+}
+
+.marker-icon {
+  font-size: 16px;
+}
+
+.facility-marker {
+  width: 20px;
+  height: 20px;
+  background-color: #9E9E9E;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+  
+  .stat-number {
+    font-size: 20px;
+  }
+  
+  .data-stats {
+    top: 60px;
+    left: 8px;
+    right: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .stats-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+  }
+  
+  .stat-number {
+    font-size: 18px;
+  }
+  
+  .stat-label {
+    font-size: 10px;
+  }
+}
+
+/* 地图图例 */
+.map-legend {
+  position: absolute;
+  bottom: 20px;
+  left: 16px;
+  background-color: white;
+  padding: 12px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+  max-width: 200px;
+}
+
+.legend-title {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 4px;
+  font-size: 12px;
+}
+
+.legend-color {
+  width: 16px;
+  height: 3px;
+  margin-right: 8px;
+  border-radius: 2px;
+}
+
+.legend-color.level-a {
+  background-color: #4CAF50;
+}
+
+.legend-color.level-b {
+  background-color: #2196F3;
+}
+
+.legend-color.level-c {
+  background-color: #FF5722;
+}
+
+.legend-color.level-d {
+  background-color: #9E9E9E;
+}
+
+/* 高对比度模式 */
+.high-contrast .shanghai-zoo-map {
+  background-color: #000;
+}
+
+.high-contrast .data-stats {
+  background-color: #000;
+  border: 1px solid #fff;
+}
+
+.high-contrast .stat-number {
+  color: #4dabf7;
+}
+
+.high-contrast .stat-label {
+  color: #ccc;
+}
+
+.high-contrast .layer-controls h3,
+.high-contrast .feature-details h3 {
+  color: #fff;
+}
+
+.high-contrast .control-item span,
+.high-contrast .detail-item {
+  color: #fff;
+}
+
+.high-contrast .control-item {
+  border-bottom-color: #333;
+}

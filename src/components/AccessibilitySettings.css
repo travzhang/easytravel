@@ -1,0 +1,78 @@
+.accessibility-settings-container {
+  padding: 20px 16px;
+}
+
+.settings-title {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 24px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+}
+
+.presets-section {
+  margin-bottom: 24px;
+}
+
+.presets-section h3 {
+  font-size: 16px;
+  margin-bottom: 16px;
+  color: #666;
+}
+
+.presets-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.presets-buttons .adm-button {
+  flex: 1;
+  min-width: calc(50% - 8px);
+  height: 40px;
+  border-radius: 8px;
+}
+
+.text-size-slider {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 8px;
+}
+
+.text-size-label {
+  margin: 0 8px;
+  color: #666;
+}
+
+.text-size-label.small {
+  font-size: 14px;
+}
+
+.text-size-label.large {
+  font-size: 20px;
+}
+
+.text-size-value {
+  text-align: center;
+  color: #1890ff;
+  font-weight: bold;
+}
+
+.settings-actions {
+  margin-top: 32px;
+  padding-bottom: 16px;
+}
+
+/* 响应式调整 */
+@media (min-width: 768px) {
+  .accessibility-settings-container {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .presets-buttons .adm-button {
+    min-width: calc(25% - 8px);
+  }
+}

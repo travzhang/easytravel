@@ -1,0 +1,95 @@
+.feedback-list-container {
+  background-color: #f5f7fa;
+}
+
+.feedback-item {
+  padding: 8px 0;
+}
+
+.feedback-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.feedback-tags {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.feedback-time {
+  font-size: 12px;
+  color: #999;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.feedback-location {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.feedback-description {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 12px;
+  line-height: 1.5;
+}
+
+.feedback-images {
+  margin-top: 8px;
+}
+
+.severity-tag {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  color: white;
+}
+
+.feedback-empty {
+  padding: 40px 0;
+  color: #999;
+}
+
+.infinite-scroll-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  color: #999;
+  font-size: 14px;
+}
+
+/* 高对比度模式 */
+.high-contrast .feedback-list-container {
+  background-color: #000;
+}
+
+.high-contrast .feedback-item {
+  border-bottom: 1px solid #333;
+}
+
+.high-contrast .feedback-time {
+  color: #ccc;
+}
+
+.high-contrast .feedback-location {
+  color: #ccc;
+}
+
+.high-contrast .feedback-description {
+  color: #fff;
+}
+
+.high-contrast .infinite-scroll-content {
+  color: #ccc;
+}

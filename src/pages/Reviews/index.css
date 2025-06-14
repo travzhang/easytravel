@@ -1,0 +1,158 @@
+.reviews-container {
+  background-color: #f5f5f5;
+  min-height: 100vh;
+  padding-bottom: 16px;
+}
+
+.reviews-list {
+  padding: 16px;
+}
+
+.review-card {
+  margin-bottom: 16px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.review-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 12px;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.user-details {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.user-name {
+  font-weight: 600;
+  font-size: 16px;
+  color: #333;
+}
+
+.review-meta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 4px;
+}
+
+.review-time {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 12px;
+  color: #999;
+}
+
+.review-scenic {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 12px;
+  color: #666;
+  font-size: 14px;
+}
+
+.review-content {
+  color: #333;
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+.review-facilities {
+  margin-bottom: 16px;
+}
+
+.facilities-label {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 8px;
+}
+
+.facilities-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.review-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  padding-top: 12px;
+  border-top: 1px solid #f0f0f0;
+}
+
+/* 标签页样式 */
+.adm-tabs {
+  background-color: #fff;
+  margin-bottom: 16px;
+}
+
+.adm-tabs-header {
+  padding: 0 16px;
+}
+
+/* 无障碍设计 */
+.review-card:focus-visible {
+  outline: 2px solid #1890ff;
+  outline-offset: 2px;
+}
+
+.review-actions button {
+  min-height: 44px;
+  min-width: 44px;
+}
+
+/* 响应式设计 */
+@media (max-width: 375px) {
+  .review-header {
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .review-meta {
+    align-items: flex-start;
+  }
+}
+
+/* 表单样式优化 */
+.adm-dialog-content .adm-form {
+  padding: 0;
+}
+
+.adm-form-item {
+  margin-bottom: 16px;
+}
+
+.adm-form-label {
+  font-weight: 600;
+  color: #333;
+}
+
+.adm-rate {
+  font-size: 20px;
+}
+
+/* 加载状态 */
+.adm-infinite-scroll {
+  text-align: center;
+  padding: 20px 0;
+  color: #999;
+}
+
+.adm-infinite-scroll span {
+  margin-right: 8px;
+} 

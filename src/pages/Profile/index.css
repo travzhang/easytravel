@@ -1,0 +1,403 @@
+.profile-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.profile-container .adm-nav-bar {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  color: white;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.profile-container .adm-nav-bar .adm-nav-bar-title {
+  color: white;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+/* 用户信息卡片 */
+.user-card {
+  margin: 20px 16px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  padding: 24px;
+  border: none;
+}
+
+.user-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.user-avatar {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  font-weight: 600;
+  font-size: 24px;
+  border: 3px solid rgba(255, 255, 255, 0.8);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.user-info {
+  flex: 1;
+}
+
+.user-name {
+  font-size: 20px;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 8px;
+}
+
+.user-type {
+  margin-bottom: 6px;
+}
+
+.user-type .adm-tag {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border: none;
+  border-radius: 12px;
+  color: white;
+  font-weight: 500;
+}
+
+.user-phone {
+  color: #7f8c8d;
+  font-size: 14px;
+}
+
+.user-header .adm-button {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border: none;
+  border-radius: 12px;
+  padding: 8px 16px;
+  font-weight: 500;
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+}
+
+/* 统计数据 */
+.user-stats {
+  background: linear-gradient(135deg, #f8f9ff 0%, #f0f2ff 100%);
+  border-radius: 16px;
+  padding: 20px;
+  margin-top: 16px;
+}
+
+.stat-item {
+  text-align: center;
+  padding: 8px;
+}
+
+.stat-value {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 4px;
+  background: linear-gradient(135deg, currentColor 0%, currentColor 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.stat-label {
+  font-size: 12px;
+  color: #7f8c8d;
+  font-weight: 500;
+}
+
+/* 功能卡片 */
+.function-card {
+  margin: 20px 16px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  padding: 24px;
+  border: none;
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.card-title::before {
+  content: "";
+  width: 4px;
+  height: 20px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 2px;
+}
+
+.function-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.function-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px;
+  background: linear-gradient(135deg, #f8f9ff 0%, #f0f2ff 100%);
+  border-radius: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(102, 126, 234, 0.1);
+}
+
+.function-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(102, 126, 234, 0.15);
+  background: linear-gradient(135deg, #f0f2ff 0%, #e8ebff 100%);
+}
+
+.function-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 14px;
+  display: flex;
+  direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.function-content {
+  flex: 1;
+}
+
+.function-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 4px;
+}
+
+.function-description {
+  font-size: 13px;
+  color: #7f8c8d;
+  line-height: 1.4;
+}
+
+.function-arrow {
+  color: #bdc3c7;
+  font-size: 16px;
+}
+
+/* 设置卡片 */
+.settings-card {
+  margin: 20px 16px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  padding: 24px;
+  border: none;
+}
+
+.settings-card .adm-list {
+  background: transparent;
+}
+
+.settings-card .adm-list-item {
+  padding: 16px 0;
+  background: transparent;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+}
+
+.settings-card .adm-list-item:hover {
+  background: linear-gradient(135deg, #f8f9ff 0%, #f0f2ff 100%);
+  border-radius: 12px;
+  margin: 0 -8px;
+  padding: 16px 8px;
+}
+
+.setting-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  color: #667eea;
+}
+
+.setting-content {
+  margin-left: 12px;
+}
+
+.setting-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 4px;
+}
+
+.setting-description {
+  font-size: 13px;
+  color: #7f8c8d;
+  line-height: 1.4;
+}
+
+/* 应用信息卡片 */
+.app-info-card {
+  margin: 20px 16px 100px 16px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  padding: 24px;
+  border: none;
+}
+
+.app-info-card .adm-list {
+  background: transparent;
+}
+
+.app-info-card .adm-list-item {
+  padding: 16px 0;
+  background: transparent;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+  font-size: 16px;
+  color: #2c3e50;
+}
+
+.app-info-card .adm-list-item:hover {
+  background: linear-gradient(135deg, #f8f9ff 0%, #f0f2ff 100%);
+  border-radius: 12px;
+  margin: 0 -8px;
+  padding: 16px 8px;
+}
+
+/* 底部导航栏 */
+.profile-tabbar {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-top: 1px solid rgba(0, 0, 0, 0.06);
+  box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.profile-tabbar .adm-tab-bar-item {
+  color: #7f8c8d;
+}
+
+.profile-tabbar .adm-tab-bar-item.adm-tab-bar-item-active {
+  color: #667eea;
+  font-weight: 600;
+}
+
+/* 弹窗样式 */
+.adm-dialog {
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.adm-dialog .adm-dialog-header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  font-weight: 600;
+  padding: 20px 24px;
+}
+
+.adm-dialog .adm-dialog-content {
+  padding: 24px;
+}
+
+.adm-form-item {
+  margin-bottom: 20px;
+}
+
+.adm-form-item .adm-form-item-label {
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 8px;
+}
+
+.adm-input {
+  border-radius: 12px;
+  border: 1px solid rgba(102, 126, 234, 0.2);
+  padding: 12px 16px;
+  font-size: 16px;
+}
+
+.adm-input:focus {
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+/* 响应式设计 */
+@media (max-width: 480px) {
+  .user-card,
+  .function-card,
+  .settings-card,
+  .app-info-card {
+    margin-left: 12px;
+    margin-right: 12px;
+    padding: 20px;
+  }
+  
+  .function-item {
+    padding: 14px;
+  }
+  
+  .function-icon {
+    width: 44px;
+    height: 44px;
+    font-size: 22px;
+  }
+  
+  .user-header {
+    gap: 14px;
+  }
+  
+  .user-name {
+    font-size: 18px;
+  }
+}
+
+/* 动画效果 */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.user-card,
+.function-card,
+.settings-card,
+.app-info-card {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+.function-card {
+  animation-delay: 0.1s;
+}
+
+.settings-card {
+  animation-delay: 0.2s;
+}
+
+.app-info-card {
+  animation-delay: 0.3s;
+} 

@@ -1,0 +1,139 @@
+.simple-zoo-map {
+  min-height: 100vh;
+  background-color: #f5f7fa;
+}
+
+.content {
+  padding: 16px;
+}
+
+.controls-card,
+.stats-card,
+.facilities-card,
+.roads-card,
+.error-card {
+  margin-bottom: 16px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.error-card {
+  background-color: #fff2f0;
+  border: 1px solid #ffccc7;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.stat-item {
+  text-align: center;
+  padding: 12px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+}
+
+.stat-number {
+  font-size: 24px;
+  font-weight: bold;
+  color: #1890ff;
+  margin-bottom: 4px;
+}
+
+.stat-label {
+  font-size: 12px;
+  color: #666;
+}
+
+.facilities-list,
+.roads-list {
+  margin-top: 16px;
+}
+
+.facility-item,
+.road-item {
+  padding: 12px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  border-left: 4px solid #1890ff;
+}
+
+.facility-header,
+.road-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.facility-icon {
+  font-size: 18px;
+}
+
+.facility-name,
+.road-name {
+  font-weight: bold;
+  flex: 1;
+}
+
+.facility-details,
+.road-details {
+  font-size: 12px;
+  color: #666;
+  line-height: 1.4;
+}
+
+.facility-details div,
+.road-details div {
+  margin-bottom: 2px;
+}
+
+.more-facilities,
+.more-roads {
+  text-align: center;
+  padding: 12px;
+  color: #999;
+  font-style: italic;
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+  
+  .stat-number {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .content {
+    padding: 12px;
+  }
+  
+  .stats-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+  }
+  
+  .stat-number {
+    font-size: 18px;
+  }
+  
+  .stat-label {
+    font-size: 10px;
+  }
+  
+  .facility-header,
+  .road-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+}

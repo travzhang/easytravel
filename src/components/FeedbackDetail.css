@@ -1,0 +1,105 @@
+.feedback-detail-container {
+  padding: 16px;
+}
+
+.feedback-detail-card {
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.feedback-detail-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 16px;
+}
+
+.feedback-detail-tags {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.feedback-detail-time {
+  font-size: 14px;
+  color: #999;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.feedback-detail-location {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.feedback-detail-description h3,
+.feedback-detail-images h3,
+.feedback-detail-comment h3,
+.feedback-detail-actions h3 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.feedback-detail-description p,
+.feedback-detail-comment p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 16px;
+}
+
+.feedback-detail-images {
+  margin-bottom: 16px;
+}
+
+.feedback-detail-comment {
+  background-color: #f5f7fa;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+
+.feedback-detail-actions {
+  margin-bottom: 24px;
+}
+
+.feedback-detail-footer {
+  margin-top: 16px;
+}
+
+/* 高对比度模式 */
+.high-contrast .feedback-detail-card {
+  background-color: #000;
+  border: 1px solid #fff;
+}
+
+.high-contrast .feedback-detail-time {
+  color: #ccc;
+}
+
+.high-contrast .feedback-detail-location {
+  color: #ccc;
+}
+
+.high-contrast .feedback-detail-description h3,
+.high-contrast .feedback-detail-images h3,
+.high-contrast .feedback-detail-comment h3,
+.high-contrast .feedback-detail-actions h3 {
+  color: #fff;
+}
+
+.high-contrast .feedback-detail-description p,
+.high-contrast .feedback-detail-comment p {
+  color: #fff;
+}
+
+.high-contrast .feedback-detail-comment {
+  background-color: #333;
+}

@@ -1,0 +1,227 @@
+.optimized-accessibility-map-card {
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  margin-bottom: 16px;
+}
+
+.optimized-accessibility-map-card.high-contrast {
+  background-color: #000;
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+.map-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 16px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.high-contrast .map-header {
+  border-bottom: 1px solid #444;
+}
+
+.map-title {
+  font-size: 18px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.map-close-btn {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.map-container {
+  width: 100%;
+  position: relative;
+}
+
+.map-error {
+  padding: 24px 16px;
+  text-align: center;
+  color: #ff4d4f;
+}
+
+.high-contrast .map-error {
+  color: #ff6666;
+}
+
+.map-error-tip {
+  margin-top: 12px;
+  font-size: 14px;
+  color: #999;
+  background-color: #f5f5f5;
+  padding: 12px;
+  border-radius: 8px;
+  word-break: break-all;
+}
+
+.high-contrast .map-error-tip {
+  background-color: #333;
+  color: #ccc;
+}
+
+.map-controls {
+  padding: 12px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.control-group {
+  display: flex;
+  gap: 8px;
+}
+
+.control-group button {
+  min-width: 48px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.map-info-panel {
+  padding: 12px 16px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  margin: 12px 16px 0;
+}
+
+.high-contrast .map-info-panel {
+  background-color: #333;
+}
+
+.map-route-info {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.info-label {
+  font-size: 14px;
+  color: #666;
+}
+
+.high-contrast .info-label {
+  color: #ccc;
+}
+
+.info-value {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+.high-contrast .info-value {
+  color: #fff;
+}
+
+/* 弹出设置面板 */
+.map-options-popover {
+  padding: 12px;
+  width: 240px;
+}
+
+.option-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+  font-size: 14px;
+}
+
+.map-mode-selector {
+  margin-top: 16px;
+}
+
+.mode-title {
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: #666;
+}
+
+.high-contrast .mode-title {
+  color: #ccc;
+}
+
+/* 障碍物信息窗体样式 */
+.obstacle-info {
+  padding: 8px;
+  max-width: 200px;
+}
+
+.obstacle-info h4 {
+  margin: 0 0 8px 0;
+  color: #ff4d4f;
+  font-size: 16px;
+}
+
+.obstacle-info p {
+  margin: 4px 0;
+  font-size: 14px;
+  color: #666;
+}
+
+/* 无障碍设施图标样式 */
+.facility-icon {
+  width: 32px;
+  height: 32px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.facility-icon.wheelchair {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%231890ff"><path d="M19 13v-2c-1.54.02-3.09-.75-4.07-1.83l-1.29-1.43c-.17-.19-.38-.34-.61-.45-.01 0-.01-.01-.02-.01H13c-.35-.2-.75-.3-1.19-.26C10.76 7.11 10 8.04 10 9.09V15c0 1.1.9 2 2 2h5v5h2v-5.5c0-1.1-.9-2-2-2h-3v-3.45c1.29 1.07 3.25 1.94 5 1.95zm-6.17 5c-.41 1.16-1.52 2-2.83 2-1.66 0-3-1.34-3-3 0-1.31.84-2.41 2-2.83V12.1c-2.28.46-4 2.48-4 4.9 0 2.76 2.24 5 5 5 2.42 0 4.44-1.72 4.9-4h-2.07z"/></svg>');
+}
+
+.facility-icon.toilet {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%2352c41a"><path d="M12 2c-4.97 0-9 4.03-9 9 0 4.17 2.84 7.67 6.69 8.69L12 22l2.31-2.31C18.16 18.67 21 15.17 21 11c0-4.97-4.03-9-9-9zm0 2c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.3c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"/></svg>');
+}
+
+.facility-icon.elevator {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23fa8c16"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM8.5 6h2v3h-2V6zm0 5h2v3h-2v-3zM5 17h14v2H5v-2zm8.5-6h2v3h-2v-3zm0-5h2v3h-2V6z"/></svg>');
+}
+
+.facility-icon.ramp {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23722ed1"><path d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-1 3H6v1h12V6zm0 3H6v1h12V9zm0 3H6v1h12v-1z"/></svg>');
+}
+
+/* 响应式调整 */
+@media (max-width: 480px) {
+  .map-controls {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .control-group {
+    width: 100%;
+    justify-content: space-between;
+  }
+  
+  .map-route-info {
+    flex-direction: column;
+    gap: 8px;
+  }
+}
